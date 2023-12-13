@@ -1,3 +1,4 @@
+#1.1
 import requests
 post_id = 1
 url = f'https://jsonplaceholder.typicode.com/todos/{post_id}'
@@ -9,6 +10,7 @@ print(response.json())
 if response.status_code >= 400:
    print(f"Error: {response.status_code} - {response.text}")
 
+#1.2 1.3
 class ToDo:
    def __init__(self, userId, id, title, completed):
       self.userId = userId
